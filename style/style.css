@@ -22,11 +22,13 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: var(--color-text);
     line-height: 1.6;
 }
-
+.hero__title {
+    font-family: 'Playfair Display', serif;
+}
 /* ===================================
    HEADER
    =================================== */
@@ -59,6 +61,25 @@ body {
     height: 140px;
     width: auto;
     max-width: 100%;
+} 
+a, button {
+    transition: all 0.3s ease;
+}
+.hero {
+    background: linear-gradient(135deg, var(--color-mint) 60%, var(--color-dark-green) 100%);
+}
+
+.hero__image,
+.product__image {
+    transition: all 0.5s ease;
+    filter: brightness(0.95) saturate(1);
+}
+
+.hero__image:hover,
+.product__image:hover {
+    filter: brightness(1.1) saturate(1.2);
+    transform: scale(1.03);
+    box-shadow: 0 8px 30px rgba(232, 169, 161, 0.4);
 }
 
 /* Navigation */
@@ -147,6 +168,11 @@ body {
     background-color: var(--color-white);
     color: var(--color-coral);
 }
+ .navbar-collapse {
+    background-color: var(--color-mint);
+    padding: 1rem;
+}
+
 
 /* ===================================
    FOOTER
