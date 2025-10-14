@@ -1,97 +1,44 @@
 /* ===================================
-   VARIABLES CSS
+   VARIABLES CSS PERSONNALISÉES
    =================================== */
 :root {
     --color-mint: #8BC4B8;
     --color-coral: #E8A9A1;
     --color-cream: #FFF8F5;
     --color-dark-green: #5A8A7E;
-    --color-light-gray: #F5F5F5;
-    --color-white: #FFFFFF;
-    --color-text: #333333;
-    --transition: all 0.3s ease;
 }
 
 /* ===================================
-   STYLES GÉNÉRAUX
+   STYLES DE BASE (Non disponibles dans Bootstrap)
    =================================== */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+body {
+    font-family: 'Poppins', sans-serif;
 }
 
-body {
-    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: var(--color-text);
-    line-height: 1.6;
-}
-.hero__title {
+/* Typographie personnalisée */
+.hero__title,
+.values__heading,
+.products__heading {
     font-family: 'Playfair Display', serif;
 }
+
 /* ===================================
-   HEADER
+   HEADER - Styles personnalisés uniquement
    =================================== */
 .header {
     background-color: var(--color-mint);
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     position: sticky;
     top: 0;
     z-index: 1000;
 }
 
-.header__navbar {
-    padding: 1.5rem 0;
-}
-
-/* Logo */
-.header__logo {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    transition: var(--transition);
-}
-
-.header__logo:hover {
-    opacity: 0.9;
-    transform: scale(1.02);
-}
-
 .header__logo-img {
     height: 140px;
-    width: auto;
-    max-width: 100%;
-} 
-a, button {
-    transition: all 0.3s ease;
-}
-.hero {
-    background: linear-gradient(135deg, var(--color-mint) 60%, var(--color-dark-green) 100%);
 }
 
-.hero__image,
-.product__image {
-    transition: all 0.5s ease;
-    filter: brightness(0.95) saturate(1);
-}
-
-.hero__image:hover,
-.product__image:hover {
-    filter: brightness(1.1) saturate(1.2);
-    transform: scale(1.03);
-    box-shadow: 0 8px 30px rgba(232, 169, 161, 0.4);
-}
-
-/* Navigation */
+/* Soulignement animé des liens (non disponible dans Bootstrap) */
 .header__nav-link {
-    color: var(--color-white);
-    font-weight: 600;
-    font-size: 1.1rem;
-    padding: 0.5rem 1.5rem;
-    transition: var(--transition);
     position: relative;
-    text-transform: uppercase;
-    letter-spacing: 1px;
 }
 
 .header__nav-link::after {
@@ -102,149 +49,64 @@ a, button {
     transform: translateX(-50%);
     width: 0;
     height: 3px;
-    background-color: var(--color-white);
-    transition: var(--transition);
+    background-color: white;
+    transition: width 0.3s ease;
 }
 
-.header__nav-link:hover,
-.header__nav-link--active {
-    color: var(--color-white);
-}
-
-.header__nav-link--active::after {
-    width: 80%;
-}
-
+.header__nav-link--active::after,
 .header__nav-link:hover::after {
     width: 80%;
 }
 
-/* Bouton panier */
-.header__cart-btn {
-    background-color: var(--color-white);
-    color: var(--color-coral);
-    border: 2px solid var(--color-white);
-    border-radius: 50%;
-    padding: 0.6rem;
-    width: 50px;
-    height: 50px;
-    position: relative;
-    transition: var(--transition);
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.header__cart-btn i {
-    font-size: 1.3rem;
-}
-
-.header__cart-btn:hover {
-    background-color: var(--color-coral);
-    color: var(--color-white);
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(232, 169, 161, 0.3);
-}
-
+/* Badge du panier personnalisé */
 .header__cart-count {
     position: absolute;
     top: -5px;
     right: -5px;
     background-color: var(--color-coral);
-    color: var(--color-white);
-    border-radius: 50%;
-    width: 24px;
-    height: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 0.75rem;
-    font-weight: bold;
     border: 2px solid var(--color-mint);
 }
 
-.header__cart-btn:hover .header__cart-count {
-    background-color: var(--color-white);
+/* ===================================
+   SECTION HERO - Styles personnalisés uniquement
+   =================================== */
+.hero {
+    background-color: var(--color-mint);
+    min-height: 600px;
+}
+
+.hero__title {
+    font-size: 3.5rem;
+    font-style: italic;
     color: var(--color-coral);
 }
- .navbar-collapse {
-    background-color: var(--color-mint);
-    padding: 1rem;
+
+.hero__btn {
+    border: 2px solid var(--color-coral);
 }
 
+.hero__btn:hover {
+    background-color: var(--color-coral);
+    border-color: var(--color-coral);
+}
 
 /* ===================================
-   FOOTER
+   FOOTER - Styles personnalisés uniquement
    =================================== */
 .footer {
     background-color: var(--color-mint);
-    color: var(--color-white);
-    padding: 3rem 0 1rem;
-    margin-top: 4rem;
-}
-
-.footer__section {
-    margin-bottom: 1.5rem;
-}
-
-.footer__title {
-    color: var(--color-white);
-    font-weight: 600;
-    margin-bottom: 1rem;
-    font-size: 1.25rem;
-}
-
-.footer__text {
-    color: var(--color-cream);
-    font-size: 0.95rem;
-    line-height: 1.6;
-}
-
-/* Réseaux sociaux */
-.footer__social {
-    display: flex;
-    gap: 1rem;
-    margin-top: 1rem;
 }
 
 .footer__social-link {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
     width: 40px;
     height: 40px;
-    background-color: var(--color-white);
+    background-color: white;
     color: var(--color-mint);
-    border-radius: 50%;
-    transition: var(--transition);
-    text-decoration: none;
 }
 
 .footer__social-link:hover {
     background-color: var(--color-coral);
-    color: var(--color-white);
-    transform: translateY(-3px);
-}
-
-.footer__social-link i {
-    font-size: 1.2rem;
-}
-
-/* Liste de navigation */
-.footer__list {
-    list-style: none;
-    padding: 0;
-}
-
-.footer__list-item {
-    margin-bottom: 0.5rem;
-}
-
-.footer__link {
-    color: var(--color-cream);
-    text-decoration: none;
-    transition: var(--transition);
+    color: white;
 }
 
 .footer__link:hover {
@@ -252,143 +114,11 @@ a, button {
     padding-left: 5px;
 }
 
-/* Formulaire newsletter */
-.footer__form {
-    margin-top: 1rem;
-}
-
-.footer__input-group {
-    margin-bottom: 0.5rem;
-}
-
-.footer__input {
-    background-color: var(--color-white);
-    border: none;
-    color: var(--color-text);
-}
-
-.footer__input:focus {
-    border-color: var(--color-coral);
-    box-shadow: 0 0 0 0.25rem rgba(232, 169, 161, 0.25);
-}
-
 .footer__submit-btn {
     background-color: var(--color-coral);
-    color: var(--color-white);
-    border: none;
-    transition: var(--transition);
 }
 
 .footer__submit-btn:hover {
     background-color: #d99088;
 }
 
-.footer__message {
-    color: var(--color-cream);
-    font-size: 0.85rem;
-    display: block;
-    margin-top: 0.5rem;
-}
-
-.footer__message--success {
-    color: #4CAF50;
-    font-weight: 500;
-}
-
-.footer__message--error {
-    color: #FF6B6B;
-    font-weight: 500;
-}
-
-/* Ligne de séparation */
-.footer__divider {
-    border-color: rgba(255, 255, 255, 0.2);
-    margin: 2rem 0 1.5rem;
-}
-
-/* Bas du footer */
-.footer__bottom {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    gap: 1rem;
-}
-
-.footer__copyright {
-    color: var(--color-cream);
-    font-size: 0.9rem;
-}
-
-.footer__legal {
-    display: flex;
-    gap: 0.5rem;
-    align-items: center;
-}
-
-.footer__separator {
-    color: var(--color-cream);
-} 
-/* ===================================
-   SECTION HERO
-   =================================== */
-.hero {
-    background-color: var(--color-mint);
-    padding: 5rem 0;
-    min-height: 600px;
-    display: flex;
-    align-items: center;
-}
-
-.hero__content {
-    padding: 2rem 0;
-}
-
-.hero__title {
-    font-size: 3.5rem;
-    font-weight: 300;
-    font-style: italic;
-    color: var(--color-coral);
-    line-height: 1.2;
-    margin-bottom: 2rem;
-}
-
-.hero__text {
-    font-size: 1.2rem;
-    color: var(--color-white);
-    line-height: 1.8;
-    margin-bottom: 2.5rem;
-    max-width: 500px;
-    font-weight: 400;
-}
-
-.hero__btn {
-    background-color: transparent;
-    color: var(--color-white);
-    border: 2px solid var(--color-coral);
-    padding: 0.85rem 2.5rem;
-    font-size: 1.1rem;
-    font-weight: 500;
-    transition: var(--transition);
-    text-decoration: none;
-    display: inline-block;
-}
-
-.hero__btn:hover {
-    background-color: var(--color-coral);
-    color: var(--color-white);
-    transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(232, 169, 161, 0.3);
-}
-
-.hero__image-wrapper {
-    position: relative;
-    padding: 2rem;
-}
-
-.hero__image {
-    width: 100%;
-    height: auto;
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-}
