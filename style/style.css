@@ -137,36 +137,10 @@ body {
     transform: scale(1.2);
 }
 
-.products__badge {
-    background-color: var(--color-coral);
-}
+/* ===================================
+   PAGE À PROPOS - Styles personnalisés
+   =================================== */
 
-.products__badge--popular {
-    background-color: var(--color-dark-green);
-}
-
-.products__price {
-    font-size: 1.8rem;
-    color: var(--color-coral);
-}
-
-.products__btn {
-    background-color: var(--color-mint);
-}
-
-.products__btn:hover {
-    background-color: var(--color-coral);
-}
-
-.products__view-all {
-    background-color: var(--color-coral);
-    border: 2px solid var(--color-coral);
-}
-
-.products__view-all:hover {
-    background-color: transparent;
-    color: var(--color-coral);
-}
 
 /* ===================================
    FOOTER - Styles personnalisés uniquement
