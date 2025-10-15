@@ -140,7 +140,19 @@ body {
 /* ===================================
    PAGE À PROPOS - Styles personnalisés
    =================================== */
+/* Section Histoire */
+.about-histoire__image-wrapper {
+    max-width: 400px;
+    margin: 0 auto;
+}
 
+.about-histoire__image-wrapper img {
+    transition: transform 0.4s ease;
+}
+
+.about-histoire__image-wrapper:hover img {
+    transform: scale(1.05);
+}
 
 /* ===================================
    FOOTER - Styles personnalisés uniquement
