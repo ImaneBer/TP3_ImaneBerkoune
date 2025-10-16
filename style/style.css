@@ -202,12 +202,6 @@ body {
     border-color: var(--color-mint);
 }
 
-/* Responsive Timeline */
-@media (max-width: 768px) {
-    .about-processus__icon {
-        font-size: 2.5rem;
-    }
-}
 
 .products__badge {
     background-color: var(--color-coral);
