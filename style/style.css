@@ -1,3 +1,5 @@
+
+
 /* ===================================
    VARIABLES CSS PERSONNALISÉES
    =================================== */
@@ -200,8 +202,6 @@ body {
     border-color: var(--color-mint);
 }
 
-
-
 /* ===================================
    PAGE CONTACT - CSS MINIMAL
    =================================== */
@@ -220,6 +220,18 @@ body {
 .contact-form__input:focus {
     border-color: var(--color-mint);
     box-shadow: 0 0 0 0.25rem rgba(139, 196, 184, 0.25);
+}
+
+/* ===================================
+   PAGE CONTACT - SECTION COORDONNÉES
+   =================================== */
+.contact-info__icon-wrapper {
+    display: inline-block;
+}
+
+.contact-info__icon {
+    font-size: 3rem;
+    color: var(--color-coral);
 }
 
 .products__badge {
