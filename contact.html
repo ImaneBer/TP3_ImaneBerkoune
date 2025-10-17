@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Elle Naturelle</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- CSS personnalisé -->
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    
+    <!-- HEADER -->
+    <header class="header shadow-sm">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container py-3">
+                <!-- Logo -->
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logo.png" alt="Elle Naturelle Logo" class="header__logo-img">
+                </a>
+                
+                <!-- Toggle button pour mobile -->
+                <button class="navbar-toggler border-white" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <!-- Menu de navigation -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto text-center">
+                        <li class="nav-item">
+                            <a class="nav-link text-white fw-semibold text-uppercase px-3 header__nav-link" 
+                               href="index.html">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white fw-semibold text-uppercase px-3 header__nav-link" 
+                               href="produits.html">Produits</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white fw-semibold text-uppercase px-3 header__nav-link" 
+                               href="apropos.html">À propos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white fw-semibold text-uppercase px-3 header__nav-link header__nav-link--active" 
+                               href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    
+                    <!-- Bouton panier -->
+                    <button class="btn btn-light rounded-circle ms-lg-3 position-relative d-flex align-items-center justify-content-center" 
+                            style="width: 50px; height: 50px;" id="cartBtn">
+                        <i class="bi bi-bag fs-5"></i>
+                        <span class="header__cart-count badge rounded-pill position-absolute">0</span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        
+        <!-- SECTION 1: FORMULAIRE DE CONTACT -->
+        <section class="contact-form py-5 bg-light">
+            <div class="container py-5">
+                
+                <!-- Titre de la section -->
+                <div class="text-center mb-5">
+                    <h1 class="display-4 fw-bold mb-3" style="color: var(--color-dark-green); font-family: 'Playfair Display', serif;">
+                        Contactez-nous
+                    </h1>
+                    <p class="lead" style="color: var(--color-coral); font-style: italic;">
+                        Une question ? Une demande spéciale ? Nous sommes là pour vous !
+                    </p>
+                </div>
+                
+                <!-- Formulaire -->
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-8">
+                        <form class="bg-white rounded-4 shadow p-4 p-md-5" id="contactForm">
+                            
+                            <!-- Ligne 1: Nom et Email -->
+                            <div class="row g-3 mb-3">
+                                
+                                <!-- Nom complet -->
+                                <div class="col-12 col-md-6">
+                                    <label for="nom" class="form-label fw-semibold" style="color: var(--color-dark-green);">
+                                        <i class="bi bi-person me-2" style="color: var(--color-coral);"></i>
+                                        Nom complet *
+                                    </label>
+                                    <input type="text" 
+                                           class="form-control form-control-lg contact-form__input" 
+                                           id="nom" 
+                                           placeholder="Votre nom"
+                                           required>
+                                </div>
+                                
+                                <!-- Email -->
+                                <div class="col-12 col-md-6">
+                                    <label for="email" class="form-label fw-semibold" style="color: var(--color-dark-green);">
+                                        <i class="bi bi-envelope me-2" style="color: var(--color-coral);"></i>
+                                        Adresse courriel *
+                                    </label>
+                                    <input type="email" 
+                                           class="form-control form-control-lg contact-form__input" 
+                                           id="email" 
+                                           placeholder="votre@email.com"
+                                           required>
+                                </div>
+                                
+                            </div>
+                            
+                            <!-- Ligne 2: Téléphone et Sujet -->
+                            <div class="row g-3 mb-3">
+                                
+                                <!-- Téléphone -->
+                                <div class="col-12 col-md-6">
+                                    <label for="telephone" class="form-label fw-semibold" style="color: var(--color-dark-green);">
+                                        <i class="bi bi-telephone me-2" style="color: var(--color-coral);"></i>
+                                        Téléphone
+                                    </label>
+                                    <input type="tel" 
+                                           class="form-control form-control-lg contact-form__input" 
+                                           id="telephone" 
+                                           placeholder="(514) 123-4567">
+                                </div>
+                                
+                                <!-- Sujet -->
+                                <div class="col-12 col-md-6">
+                                    <label for="sujet" class="form-label fw-semibold" style="color: var(--color-dark-green);">
+                                        <i class="bi bi-tag me-2" style="color: var(--color-coral);"></i>
+                                        Sujet *
+                                    </label>
+                                    <select class="form-select form-select-lg contact-form__input" 
+                                            id="sujet" 
+                                            required>
+                                        <option value="" selected disabled>Choisissez un sujet</option>
+                                        <option value="question">Question générale</option>
+                                        <option value="commande">Suivi de commande</option>
+                                        <option value="produit">Information sur un produit</option>
+                                        <option value="partenariat">Partenariat</option>
+                                        <option value="autre">Autre</option>
+                                    </select>
+                                </div>
+                                
+                            </div>
+                            
+                            <!-- Ligne 3: Message -->
+                            <div class="mb-4">
+                                <label for="message" class="form-label fw-semibold" style="color: var(--color-dark-green);">
+                                    <i class="bi bi-chat-dots me-2" style="color: var(--color-coral);"></i>
+                                    Votre message *
+                                </label>
+                                <textarea class="form-control form-control-lg contact-form__input" 
+                                          id="message" 
+                                          rows="5" 
+                                          placeholder="Décrivez votre demande en détail..."
+                                          required></textarea>
+                            </div>
+                            
+                            <!-- Bouton d'envoi -->
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-lg contact-form__submit px-5 py-3 rounded-pill fw-semibold">
+                                    <i class="bi bi-send me-2"></i>
+                                    Envoyer le message
+                                </button>
+                            </div>
+                            
+                            <p class="text-center text-muted small mt-3 mb-0">
+                                * Champs obligatoires
+                            </p>
+                            
+                        </form>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        
+    </main>
+   <!-- FOOTER -->
+    <footer class="footer text-white py-5 mt-5">
+        <div class="container">
+            <div class="row g-4">
+                
+                <!-- Colonne 1: À propos -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h5 class="fw-semibold mb-3">Elle Naturelle</h5>
+                    <p class="opacity-75 lh-lg small">
+                        Des produits naturels et biologiques conçus avec amour pour prendre soin de vous.
+                    </p>
+                    <!-- Réseaux sociaux -->
+                    <div class="d-flex gap-3 mt-3">
+                        <a href="#" class="footer__social-link rounded-circle d-flex align-items-center justify-content-center text-decoration-none transition" 
+                           aria-label="Facebook">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="#" class="footer__social-link rounded-circle d-flex align-items-center justify-content-center text-decoration-none transition" 
+                           aria-label="Instagram">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="#" class="footer__social-link rounded-circle d-flex align-items-center justify-content-center text-decoration-none transition" 
+                           aria-label="Pinterest">
+                            <i class="bi bi-pinterest"></i>
+                        </a>
+                        <a href="#" class="footer__social-link rounded-circle d-flex align-items-center justify-content-center text-decoration-none transition" 
+                           aria-label="TikTok">
+                            <i class="bi bi-tiktok"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Colonne 2: Navigation -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h5 class="fw-semibold mb-3">Navigation</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <a href="index.html" class="text-decoration-none opacity-75 footer__link transition">
+                                Accueil
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="produits.html" class="text-decoration-none opacity-75 footer__link transition">
+                                Produits
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="apropos.html" class="text-decoration-none opacity-75 footer__link transition">
+                                À propos
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="contact.html" class="text-decoration-none opacity-75 footer__link transition">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Colonne 3: Contact -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h5 class="fw-semibold mb-3">Contactez-nous</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <i class="bi bi-envelope me-2"></i>
+                            <a href="mailto:info@ellenaturelle.com" 
+                               class="text-decoration-none opacity-75 transition">
+                                info@ellenaturelle.com
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <i class="bi bi-telephone me-2"></i>
+                            <a href="tel:+15141234567" 
+                               class="text-decoration-none opacity-75 transition">
+                                (514) 123-4567
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <i class="bi bi-geo-alt me-2"></i>
+                            <span class="opacity-75">Montréal, QC</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Colonne 4: Newsletter -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h5 class="fw-semibold mb-3">Infolettre</h5>
+                    <p class="opacity-75 small">Recevez nos nouveautés et promotions</p>
+                    <form id="newsletterForm">
+                        <div class="input-group mb-2">
+                            <input type="email" 
+                                   class="form-control" 
+                                   id="newsletterEmail" 
+                                   placeholder="Votre courriel" 
+                                   required>
+                            <button class="btn footer__submit-btn text-white" type="submit">
+                                <i class="bi bi-send"></i>
+                            </button>
+                        </div>
+                        <small class="d-block mt-2" id="newsletterMessage"></small>
+                    </form>
+                </div>
+                
+            </div>
+            
+            <!-- Ligne de séparation -->
+            <hr class="opacity-25 my-4">
+            
+            <!-- Copyright -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="d-flex flex-wrap justify-content-between align-items-center gap-3">
+                        <p class="mb-0 opacity-75 small">
+                            &copy; 2025 Elle Naturelle. Tous droits réservés.
+                        </p>
+                        <div class="d-flex gap-2 align-items-center">
+                            <a href="#" class="text-decoration-none opacity-75 small transition">
+                                Politique de confidentialité
+                            </a>
+                            <span class="opacity-75">|</span>
+                            <a href="#" class="text-decoration-none opacity-75 small transition">
+                                Conditions d'utilisation
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
