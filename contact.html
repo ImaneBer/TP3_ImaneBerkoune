@@ -41,10 +41,7 @@
                             <a class="nav-link text-white fw-semibold text-uppercase px-3 header__nav-link" 
                                href="index.html">Accueil</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white fw-semibold text-uppercase px-3 header__nav-link" 
-                               href="produits.html">Produits</a>
-                        </li>
+                      
                         <li class="nav-item">
                             <a class="nav-link text-white fw-semibold text-uppercase px-3 header__nav-link" 
                                href="apropos.html">À propos</a>
@@ -281,12 +278,274 @@
             </div>
         </section>
         
+        <!-- SECTION 3: FAQ (ACCORDION) -->
+        <section class="contact-faq py-5 bg-light">
+            <div class="container py-5">
+                
+                <!-- Titre de la section -->
+                <div class="text-center mb-5">
+                    <h2 class="display-5 fw-bold mb-3" style="color: var(--color-dark-green); font-family: 'Playfair Display', serif;">
+                        Questions fréquentes
+                    </h2>
+                    <p class="lead" style="color: var(--color-coral); font-style: italic;">
+                        Trouvez rapidement les réponses à vos questions
+                    </p>
+                </div>
+                
+                <!-- Accordion -->
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-10">
+                        <div class="accordion" id="faqAccordion">
+                            
+                            <!-- Question 1 -->
+                            <div class="accordion-item border-0 rounded-3 mb-3 shadow-sm">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button fw-semibold rounded-3" 
+                                            type="button" 
+                                            data-bs-toggle="collapse" 
+                                            data-bs-target="#faq1"
+                                            style="color: var(--color-dark-green);">
+                                        <i class="bi bi-question-circle me-3" style="color: var(--color-coral);"></i>
+                                        Quels sont vos délais de livraison ?
+                                    </button>
+                                </h3>
+                                <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body text-muted">
+                                        Nous expédions toutes les commandes sous 24 à 48 heures ouvrables. 
+                                        La livraison standard prend généralement 3 à 5 jours ouvrables au Québec 
+                                        et 5 à 7 jours dans le reste du Canada. Livraison express disponible 
+                                        (1-2 jours) moyennant des frais supplémentaires.
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Question 2 -->
+                            <div class="accordion-item border-0 rounded-3 mb-3 shadow-sm">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed fw-semibold rounded-3" 
+                                            type="button" 
+                                            data-bs-toggle="collapse" 
+                                            data-bs-target="#faq2"
+                                            style="color: var(--color-dark-green);">
+                                        <i class="bi bi-arrow-left-right me-3" style="color: var(--color-coral);"></i>
+                                        Quelle est votre politique de retour ?
+                                    </button>
+                                </h3>
+                                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body text-muted">
+                                        Nous acceptons les retours dans les 30 jours suivant la réception de votre commande, 
+                                        à condition que les produits soient non ouverts et dans leur emballage d'origine. 
+                                        Pour des raisons d'hygiène, nous ne pouvons pas accepter les retours de produits ouverts. 
+                                        Les frais de retour sont à la charge du client.
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Question 3 -->
+                            <div class="accordion-item border-0 rounded-3 mb-3 shadow-sm">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed fw-semibold rounded-3" 
+                                            type="button" 
+                                            data-bs-toggle="collapse" 
+                                            data-bs-target="#faq3"
+                                            style="color: var(--color-dark-green);">
+                                        <i class="bi bi-flower1 me-3" style="color: var(--color-coral);"></i>
+                                        Vos produits sont-ils vraiment 100% naturels ?
+                                    </button>
+                                </h3>
+                                <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body text-muted">
+                                        Oui, absolument ! Tous nos produits sont fabriqués avec des ingrédients 100% naturels 
+                                        et biologiques certifiés. Nous n'utilisons aucun parabène, sulfate, silicone ou autre 
+                                        produit chimique nocif. Chaque ingrédient est soigneusement sélectionné pour ses 
+                                        propriétés bienfaisantes et sa pureté.
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Question 4 -->
+                            <div class="accordion-item border-0 rounded-3 mb-3 shadow-sm">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed fw-semibold rounded-3" 
+                                            type="button" 
+                                            data-bs-toggle="collapse" 
+                                            data-bs-target="#faq4"
+                                            style="color: var(--color-dark-green);">
+                                        <i class="bi bi-droplet me-3" style="color: var(--color-coral);"></i>
+                                        Comment conserver mes produits ?
+                                    </button>
+                                </h3>
+                                <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body text-muted">
+                                        Conservez vos produits à l'abri de la lumière directe du soleil et de l'humidité, 
+                                        à température ambiante (entre 15°C et 25°C). Les savons peuvent être conservés jusqu'à 
+                                        12 mois, les crèmes et sérums jusqu'à 6 mois après ouverture. Fermez toujours bien 
+                                        les contenants après usage pour préserver la fraîcheur des ingrédients naturels.
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Question 5 -->
+                            <div class="accordion-item border-0 rounded-3 mb-3 shadow-sm">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed fw-semibold rounded-3" 
+                                            type="button" 
+                                            data-bs-toggle="collapse" 
+                                            data-bs-target="#faq5"
+                                            style="color: var(--color-dark-green);">
+                                        <i class="bi bi-star me-3" style="color: var(--color-coral);"></i>
+                                        Faites-vous des commandes personnalisées ?
+                                    </button>
+                                </h3>
+                                <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body text-muted">
+                                        Oui ! Nous adorons créer des produits sur mesure pour des occasions spéciales 
+                                        (mariages, cadeaux corporatifs, etc.). Contactez-nous avec vos besoins et nous 
+                                        serons ravis de discuter de votre projet. Un minimum de commande peut s'appliquer 
+                                        selon la complexité de la demande.
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Question 6 -->
+                            <div class="accordion-item border-0 rounded-3 shadow-sm">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed fw-semibold rounded-3" 
+                                            type="button" 
+                                            data-bs-toggle="collapse" 
+                                            data-bs-target="#faq6"
+                                            style="color: var(--color-dark-green);">
+                                        <i class="bi bi-credit-card me-3" style="color: var(--color-coral);"></i>
+                                        Quels modes de paiement acceptez-vous ?
+                                    </button>
+                                </h3>
+                                <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body text-muted">
+                                        Nous acceptons les cartes de crédit (Visa, MasterCard, American Express), 
+                                        les cartes de débit, PayPal et Interac e-Transfer. Tous les paiements sont 
+                                        sécurisés et cryptés. Nous n'acceptons pas les paiements en espèces pour 
+                                        les commandes en ligne.
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        
     </main>
    
-    <!-- FOOTER (temporaire - à compléter) -->
+    <!-- FOOTER -->
     <footer class="footer text-white py-5 mt-5">
         <div class="container">
-            <p class="text-center mb-0">&copy; 2025 Elle Naturelle. Tous droits réservés.</p>
+            <div class="row g-4">
+                
+                <!-- Colonne 1: À propos -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <h5 class="fw-semibold mb-3">Elle Naturelle</h5>
+                    <p class="opacity-75 lh-lg small">
+                        Des produits naturels et biologiques conçus avec amour pour prendre soin de vous.
+                    </p>
+                    <!-- Réseaux sociaux -->
+                    <div class="d-flex gap-3 mt-3">
+                        <a href="#" class="footer__social-link rounded-circle d-flex align-items-center justify-content-center text-decoration-none" 
+                           aria-label="Facebook">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="#" class="footer__social-link rounded-circle d-flex align-items-center justify-content-center text-decoration-none" 
+                           aria-label="Instagram">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="#" class="footer__social-link rounded-circle d-flex align-items-center justify-content-center text-decoration-none" 
+                           aria-label="Pinterest">
+                            <i class="bi bi-pinterest"></i>
+                        </a>
+                        <a href="#" class="footer__social-link rounded-circle d-flex align-items-center justify-content-center text-decoration-none" 
+                           aria-label="TikTok">
+                            <i class="bi bi-tiktok"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Colonne 2: Navigation -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <h5 class="fw-semibold mb-3">Navigation</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <a href="index.html" class="text-decoration-none opacity-75 footer__link">
+                                Accueil
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="produits.html" class="text-decoration-none opacity-75 footer__link">
+                                Produits
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="apropos.html" class="text-decoration-none opacity-75 footer__link">
+                                À propos
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="contact.html" class="text-decoration-none opacity-75 footer__link">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Colonne 3: Contact -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <h5 class="fw-semibold mb-3">Contactez-nous</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <i class="bi bi-envelope me-2"></i>
+                            <a href="mailto:info@ellenaturelle.com" 
+                               class="text-decoration-none opacity-75">
+                                info@ellenaturelle.com
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <i class="bi bi-telephone me-2"></i>
+                            <a href="tel:+15141234567" 
+                               class="text-decoration-none opacity-75">
+                                (514) 123-4567
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <i class="bi bi-geo-alt me-2"></i>
+                            <span class="opacity-75">Montréal, QC</span>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+            
+            <!-- Ligne de séparation -->
+            <hr class="opacity-25 my-4">
+            
+            <!-- Copyright -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="d-flex flex-wrap justify-content-between align-items-center gap-3">
+                        <p class="mb-0 opacity-75 small">
+                            &copy; 2025 Elle Naturelle. Tous droits réservés.
+                        </p>
+                        <div class="d-flex gap-2 align-items-center">
+                            <a href="#" class="text-decoration-none opacity-75 small">
+                                Politique de confidentialité
+                            </a>
+                            <span class="opacity-75">|</span>
+                            <a href="#" class="text-decoration-none opacity-75 small">
+                                Conditions d'utilisation
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
     
