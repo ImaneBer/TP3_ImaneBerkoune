@@ -114,6 +114,10 @@ body {
 .values__card:hover .values__icon {
     transform: rotate(360deg) scale(1.1);
 }
+.values__heading {
+    color: var(--color-dark-green);
+    font-size: 3rem; /* Plus grand */
+}
 
 /* ===================================
    SECTION PRODUITS - Styles personnalisés uniquement
@@ -138,7 +142,10 @@ body {
 .products__image:hover {
     transform: scale(1.2);
 }
-
+.products__heading {
+    color: var(--color-dark-green);
+    font-size: 3rem; /* Plus grand */
+}
 /* ===================================
    PAGE À PROPOS - Styles personnalisés
    =================================== */
