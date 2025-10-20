@@ -5,16 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>À propos - Elle Naturelle</title>
     
-    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     
-    <!-- Bootstrap Icons -->
+   
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.min.css">
     
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     
-    <!-- CSS personnalisé -->
+  
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
@@ -23,7 +22,7 @@
     <header class="header shadow-sm">
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container py-3">
-                <!-- Logo -->
+                
                 <a class="navbar-brand" href="index.html">
                     <img src="img/logo.png" alt="Elle Naturelle Logo" class="header__logo-img">
                 </a>
@@ -38,25 +37,25 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto text-center">
                         <li class="nav-item">
-                            <a class="nav-link text-white fw-semibold text-uppercase px-3 header__nav-link" 
+                            <a class="nav-link text-white fw-semibold text-uppercase px-3 header__nav-lien" 
                                href="index.html">Accueil</a>
                         </li>
                       
                         <li class="nav-item">
-                            <a class="nav-link text-white fw-semibold text-uppercase px-3 header__nav-link header__nav-link--active" 
+                            <a class="nav-link text-white fw-semibold text-uppercase px-3 header__nav-lien header__nav-lien--actif" 
                                href="apropos.html">À propos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white fw-semibold text-uppercase px-3 header__nav-link" 
+                            <a class="nav-link text-white fw-semibold text-uppercase px-3 header__nav-lien" 
                                href="contact.html">Contact</a>
                         </li>
                     </ul>
                     
-                    <!-- Bouton panier -->
+                  
                     <button class="btn btn-light rounded-circle ms-lg-3 position-relative d-flex align-items-center justify-content-center" 
                             style="width: 50px; height: 50px;" id="cartBtn">
                         <i class="bi bi-bag fs-5"></i>
-                        <span class="header__cart-count badge rounded-pill position-absolute">0</span>
+                        <span class="header__panier-compte badge rounded-pill position-absolute">0</span>
                     </button>
                 </div>
             </div>
@@ -67,11 +66,11 @@
     <main>
         
         <!-- SECTION 1: NOTRE HISTOIRE -->
-        <section class="about-histoire py-5">
+        <section class="apropos-histoire py-5">
             <div class="container py-5">
                 <div class="row align-items-center g-5">
                     
-                    <!-- Colonne gauche: Texte -->
+                   
                     <div class="col-12 col-lg-6 order-2 order-lg-1">
                         <h2 class="display-5 fw-bold mb-4" style="color: var(--color-dark-green); font-family: 'Playfair Display', serif;">
                             Notre Histoire
@@ -94,9 +93,9 @@
                         </p>
                     </div>
                     
-                    <!-- Colonne droite: Image -->
+                   
                     <div class="col-12 col-lg-6 order-1 order-lg-2">
-                        <div class="about-histoire__image-wrapper">
+                        <div class="apropos-histoire__image-conteneur">
                             <img src="img/fondatrice.jpg" 
                                  alt="Fondatrice Elle Naturelle" 
                                  class="img-fluid rounded-4 shadow-lg">
@@ -108,7 +107,7 @@
         </section>
         
         <!-- SECTION 2: NOTRE PROCESSUS -->
-        <section class="about-processus py-5 bg-light">
+        <section class="apropos-processus py-5 bg-light">
             <div class="container py-5">
                 <div class="text-center mb-5">
                     <h2 class="display-5 fw-bold mb-3" style="color: var(--color-dark-green); font-family: 'Playfair Display', serif;">
@@ -119,80 +118,82 @@
                     </p>
                 </div>
                 
-                
-                            
-                            <!-- Étape 1 -->
-                            <div class="about-processus__step">
-                                <div class="about-processus__step-marker"></div>
-                                <div class="about-processus__step-content bg-white rounded-4 shadow-sm p-4">
-                                    <h3 class="h4 fw-semibold mb-3" style="color: var(--color-dark-green);">
-                                        <i class="bi bi-flower1 me-2" style="color: var(--color-coral);"></i>
-                                        Sélection des Ingrédients
-                                    </h3>
-                                    <p class="text-muted mb-0 lh-lg">
-                                        Nous sélectionnons avec soin des ingrédients biologiques et naturels 
-                                        provenant de producteurs locaux et éthiques. Chaque ingrédient est 
-                                        choisi pour ses propriétés bienfaisantes et sa qualité exceptionnelle.
-                                    </p>
-                                </div>
+                <div class="row g-4">
+                    
+                    <!-- Étape 1 -->
+                    <div class="col-12 col-md-6">
+                        <div class="apropos-processus__carte bg-white rounded-4 shadow-sm p-4 h-100">
+                            <div class="apropos-processus__icone-conteneur mb-3">
+                                <i class="bi bi-flower1 apropos-processus__icone"></i>
                             </div>
-                            
-                            <!-- Étape 2 -->
-                            <div class="about-processus__step">
-                                <div class="about-processus__step-marker"></div>
-                                <div class="about-processus__step-content bg-white rounded-4 shadow-sm p-4">
-                                    <h3 class="h4 fw-semibold mb-3" style="color: var(--color-dark-green);">
-                                        <i class="bi bi-droplet-half me-2" style="color: var(--color-coral);"></i>
-                                        Fabrication Artisanale
-                                    </h3>
-                                    <p class="text-muted mb-0 lh-lg">
-                                        Chaque produit est fabriqué à la main en petites quantités dans notre 
-                                        atelier de Montréal. Ce processus artisanal garantit fraîcheur, qualité 
-                                        et attention aux détails pour chaque création.
-                                    </p>
-                                </div>
-                            </div>
-                            
-                            <!-- Étape 3 -->
-                            <div class="about-processus__step">
-                                <div class="about-processus__step-marker"></div>
-                                <div class="about-processus__step-content bg-white rounded-4 shadow-sm p-4">
-                                    <h3 class="h4 fw-semibold mb-3" style="color: var(--color-dark-green);">
-                                        <i class="bi bi-shield-check me-2" style="color: var(--color-coral);"></i>
-                                        Tests de Qualité
-                                    </h3>
-                                    <p class="text-muted mb-0 lh-lg">
-                                        Validation rigoureuse de chaque lot pour assurer l'efficacité et 
-                                        la sécurité de nos formulations naturelles. Tests dermatologiques 
-                                        et contrôles qualité systématiques avant commercialisation.
-                                    </p>
-                                </div>
-                            </div>
-                            
-                            <!-- Étape 4 -->
-                            <div class="about-processus__step">
-                                <div class="about-processus__step-marker"></div>
-                                <div class="about-processus__step-content bg-white rounded-4 shadow-sm p-4">
-                                    <h3 class="h4 fw-semibold mb-3" style="color: var(--color-dark-green);">
-                                        <i class="bi bi-box-seam me-2" style="color: var(--color-coral);"></i>
-                                        Emballage Éco-responsable
-                                    </h3>
-                                    <p class="text-muted mb-0 lh-lg">
-                                        Emballages recyclables et biodégradables pour minimiser notre impact 
-                                        environnemental. Chaque détail compte pour préserver notre planète 
-                                        tout en protégeant vos produits naturels.
-                                    </p>
-                                </div>
-                            </div>
-                            
+                            <h3 class="h4 fw-semibold mb-3" style="color: var(--color-dark-green);">
+                                Sélection des Ingrédients
+                            </h3>
+                            <p class="text-muted mb-0 lh-lg">
+                                Nous sélectionnons avec soin des ingrédients biologiques et naturels 
+                                provenant de producteurs locaux et éthiques. Chaque ingrédient est 
+                                choisi pour ses propriétés bienfaisantes et sa qualité exceptionnelle.
+                            </p>
                         </div>
                     </div>
+                    
+                    <!-- Étape 2 -->
+                    <div class="col-12 col-md-6">
+                        <div class="apropos-processus__carte bg-white rounded-4 shadow-sm p-4 h-100">
+                            <div class="apropos-processus__icone-conteneur mb-3">
+                                <i class="bi bi-droplet-half apropos-processus__icone"></i>
+                            </div>
+                            <h3 class="h4 fw-semibold mb-3" style="color: var(--color-dark-green);">
+                                Fabrication Artisanale
+                            </h3>
+                            <p class="text-muted mb-0 lh-lg">
+                                Chaque produit est fabriqué à la main en petites quantités dans notre 
+                                atelier de Montréal. Ce processus artisanal garantit fraîcheur, qualité 
+                                et attention aux détails pour chaque création.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Étape 3 -->
+                    <div class="col-12 col-md-6">
+                        <div class="apropos-processus__carte bg-white rounded-4 shadow-sm p-4 h-100">
+                            <div class="apropos-processus__icone-conteneur mb-3">
+                                <i class="bi bi-shield-check apropos-processus__icone"></i>
+                            </div>
+                            <h3 class="h4 fw-semibold mb-3" style="color: var(--color-dark-green);">
+                                Tests de Qualité
+                            </h3>
+                            <p class="text-muted mb-0 lh-lg">
+                                Validation rigoureuse de chaque lot pour assurer l'efficacité et 
+                                la sécurité de nos formulations naturelles. Tests dermatologiques 
+                                et contrôles qualité systématiques avant commercialisation.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Étape 4 -->
+                    <div class="col-12 col-md-6">
+                        <div class="apropos-processus__carte bg-white rounded-4 shadow-sm p-4 h-100">
+                            <div class="apropos-processus__icone-conteneur mb-3">
+                                <i class="bi bi-box-seam apropos-processus__icone"></i>
+                            </div>
+                            <h3 class="h4 fw-semibold mb-3" style="color: var(--color-dark-green);">
+                                Emballage Éco-responsable
+                            </h3>
+                            <p class="text-muted mb-0 lh-lg">
+                                Emballages recyclables et biodégradables pour minimiser notre impact 
+                                environnemental. Chaque détail compte pour préserver notre planète 
+                                tout en protégeant vos produits naturels.
+                            </p>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
         </section>
 
         <!-- SECTION 3: TÉMOIGNAGES -->
-        <section class="about-temoignages py-5">
+        <section class="apropos-temoignages py-5">
             <div class="container py-5">
                 <div class="text-center mb-5">
                     <h2 class="display-5 fw-bold mb-3" style="color: var(--color-dark-green); font-family: 'Playfair Display', serif;">
@@ -207,7 +208,7 @@
                     
                     <!-- Témoignage 1 -->
                     <div class="col-12 col-md-6 col-lg-4">
-                        <div class="about-temoignages__card bg-white rounded-4 shadow-sm p-4 h-100">
+                        <div class="apropos-temoignages__carte bg-white rounded-4 shadow-sm p-4 h-100">
                             <div class="mb-3">
                                 <i class="bi bi-star-fill" style="color: #FFD700;"></i>
                                 <i class="bi bi-star-fill" style="color: #FFD700;"></i>
@@ -224,7 +225,7 @@
                             <footer class="d-flex align-items-center gap-3">
                                 <img src="img/client01.jpg" 
                                      alt="Marie Dubois" 
-                                     class="about-temoignages__avatar rounded-circle">
+                                     class="apropos-temoignages__avatar rounded-circle">
                                 <div>
                                     <div class="fw-semibold" style="color: var(--color-dark-green);">Marie Dubois</div>
                                     <small class="text-muted">Cliente depuis 2 ans</small>
@@ -235,7 +236,7 @@
                     
                     <!-- Témoignage 2 -->
                     <div class="col-12 col-md-6 col-lg-4">
-                        <div class="about-temoignages__card bg-white rounded-4 shadow-sm p-4 h-100">
+                        <div class="apropos-temoignages__carte bg-white rounded-4 shadow-sm p-4 h-100">
                             <div class="mb-3">
                                 <i class="bi bi-star-fill" style="color: #FFD700;"></i>
                                 <i class="bi bi-star-fill" style="color: #FFD700;"></i>
@@ -252,7 +253,7 @@
                             <footer class="d-flex align-items-center gap-3">
                                 <img src="img/client02.jpg" 
                                      alt="Annie Lefebvre" 
-                                     class="about-temoignages__avatar rounded-circle">
+                                     class="apropos-temoignages__avatar rounded-circle">
                                 <div>
                                     <div class="fw-semibold" style="color: var(--color-dark-green);">Annie Lefebvre</div>
                                     <small class="text-muted">Cliente depuis 1 an</small>
@@ -263,7 +264,7 @@
                     
                     <!-- Témoignage 3 -->
                     <div class="col-12 col-md-6 col-lg-4">
-                        <div class="about-temoignages__card bg-white rounded-4 shadow-sm p-4 h-100">
+                        <div class="apropos-temoignages__carte bg-white rounded-4 shadow-sm p-4 h-100">
                             <div class="mb-3">
                                 <i class="bi bi-star-fill" style="color: #FFD700;"></i>
                                 <i class="bi bi-star-fill" style="color: #FFD700;"></i>
@@ -280,7 +281,7 @@
                             <footer class="d-flex align-items-center gap-3">
                                 <img src="img/client03.jpg" 
                                      alt="Catherine Roy" 
-                                     class="about-temoignages__avatar rounded-circle">
+                                     class="apropos-temoignages__avatar rounded-circle">
                                 <div>
                                     <div class="fw-semibold" style="color: var(--color-dark-green);">Catherine Roy</div>
                                     <small class="text-muted">Cliente depuis 3 ans</small>
@@ -295,66 +296,62 @@
         
     </main>
    
-   <!-- FOOTER -->
+    <!-- FOOTER -->
     <footer class="footer text-white py-5 mt-5">
         <div class="container">
             <div class="row g-4">
                 
-                <!-- Colonne 1: À propos -->
+
                 <div class="col-12 col-md-6 col-lg-4">
                     <h5 class="fw-semibold mb-3">Elle Naturelle</h5>
                     <p class="opacity-75 lh-lg small">
                         Des produits naturels et biologiques conçus avec amour pour prendre soin de vous.
                     </p>
-                    <!-- Réseaux sociaux -->
+                  
+
                     <div class="d-flex gap-3 mt-3">
-                        <a href="#" class="footer__social-link rounded-circle d-flex align-items-center justify-content-center text-decoration-none" 
+                        <a href="#" class="footer__lien-social rounded-circle d-flex align-items-center justify-content-center text-decoration-none" 
                            aria-label="Facebook">
                             <i class="bi bi-facebook"></i>
                         </a>
-                        <a href="#" class="footer__social-link rounded-circle d-flex align-items-center justify-content-center text-decoration-none" 
+                        <a href="#" class="footer__lien-social rounded-circle d-flex align-items-center justify-content-center text-decoration-none" 
                            aria-label="Instagram">
                             <i class="bi bi-instagram"></i>
                         </a>
-                        <a href="#" class="footer__social-link rounded-circle d-flex align-items-center justify-content-center text-decoration-none" 
+                        <a href="#" class="footer__lien-social rounded-circle d-flex align-items-center justify-content-center text-decoration-none" 
                            aria-label="Pinterest">
                             <i class="bi bi-pinterest"></i>
                         </a>
-                        <a href="#" class="footer__social-link rounded-circle d-flex align-items-center justify-content-center text-decoration-none" 
+                        <a href="#" class="footer__lien-social rounded-circle d-flex align-items-center justify-content-center text-decoration-none" 
                            aria-label="TikTok">
                             <i class="bi bi-tiktok"></i>
                         </a>
                     </div>
                 </div>
                 
-                <!-- Colonne 2: Navigation -->
                 <div class="col-12 col-md-6 col-lg-4">
                     <h5 class="fw-semibold mb-3">Navigation</h5>
                     <ul class="list-unstyled">
                         <li class="mb-2">
-                            <a href="index.html" class="text-decoration-none opacity-75 footer__link">
+                            <a href="index.html" class="text-decoration-none opacity-75 footer__lien">
                                 Accueil
                             </a>
                         </li>
                         <li class="mb-2">
-                            <a href="produits.html" class="text-decoration-none opacity-75 footer__link">
+                            <a href="produits.html" class="text-decoration-none opacity-75 footer__lien">
                                 Produits
                             </a>
                         </li>
+                        
                         <li class="mb-2">
-                            <a href="apropos.html" class="text-decoration-none opacity-75 footer__link">
-                                À propos
-                            </a>
-                        </li>
-                        <li class="mb-2">
-                            <a href="contact.html" class="text-decoration-none opacity-75 footer__link">
+                            <a href="contact.html" class="text-decoration-none opacity-75 footer__lien">
                                 Contact
                             </a>
                         </li>
                     </ul>
                 </div>
                 
-                <!-- Colonne 3: Contact -->
+          
                 <div class="col-12 col-md-6 col-lg-4">
                     <h5 class="fw-semibold mb-3">Contactez-nous</h5>
                     <ul class="list-unstyled">
@@ -381,7 +378,7 @@
                 
             </div>
             
-            <!-- Ligne de séparation -->
+          
             <hr class="opacity-25 my-4">
             
             <!-- Copyright -->
@@ -407,11 +404,7 @@
     </footer>
     
     <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> 
-        <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- JavaScript personnalisé -->
     <script src="index.js"></script>
-</body>
 </body>
 </html>
