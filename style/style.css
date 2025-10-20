@@ -1,5 +1,5 @@
 /* 
-   VARIABLES CSS PERSONNALISÉES
+   VARIABLES 
  */
 :root {
     --color-mint: #8BC4B8;
@@ -21,8 +21,7 @@ body {
     font-family: 'Playfair Display', serif;
 }
 
-/* 
-   HEADER  */
+/*  HEADER  */
 .header {
     background-color: var(--color-mint);
     position: sticky;
@@ -64,8 +63,7 @@ body {
     border: 2px solid var(--color-mint);
 }
 
-/* 
-   SECTION HERO/PRINCIPAL  */
+/*  SECTION HERO/PRINCIPAL  */
 .principal {
     background-color: var(--color-mint);
     min-height: 600px;
@@ -114,8 +112,7 @@ body {
     font-size: 3rem;
 }
 
-/* 
-   SECTION PRODUITS  */
+/*  SECTION PRODUITS  */
 .produits {
     background-color: #f8f9fa;
 }
@@ -173,8 +170,7 @@ body {
     color: var(--color-coral);
 }
 
-/* 
-   PAGE À PROPOS  */
+/*  PAGE À PROPOS  */
 
 /* Section Histoire */
 .apropos-histoire__image-conteneur {
@@ -235,8 +231,7 @@ body {
     border-color: var(--color-mint);
 }
 
-/* 
-   PAGE CONTACT  */
+/*  PAGE CONTACT  */
 
 /* Bouton  */
 .formulaire-contact__soumettre {
@@ -265,8 +260,7 @@ body {
     color: var(--color-coral);
 }
 
-/* 
-   FOOTER - Styles personnalisés uniquement */
+/*  FOOTER  */
 .footer {
     background-color: var(--color-mint);
 }
@@ -296,4 +290,167 @@ body {
     background-color: #d99088;
 }
 
+/* RESPONSIVE - Media Queries */
 
+/* Tablettes et petits écrans (max 992px) */
+@media (max-width: 992px) {
+    .principal__titre {
+        font-size: 2.5rem;
+    }
+    
+    .valeurs__titre,
+    .produits__titre {
+        font-size: 2.5rem;
+    }
+    
+    .header__logo-img {
+        height: 100px;
+    }
+}
+
+/* Mobile large (max 768px) */
+@media (max-width: 768px) {
+    .principal__titre {
+        font-size: 2rem;
+    }
+    
+    .valeurs__titre,
+    .produits__titre {
+        font-size: 2rem;
+    }
+    
+    .header__logo-img {
+        height: 80px;
+    }
+    
+    .principal {
+        min-height: 400px;
+    }
+    
+    .valeurs__icone {
+        width: 60px;
+        height: 60px;
+        font-size: 2rem;
+    }
+    
+    .produits__image-conteneur {
+        height: 300px;
+    }
+}
+
+/* Mobile (max 576px) */
+@media (max-width: 576px) {
+    .principal__titre {
+        font-size: 1.75rem;
+    }
+    
+    .valeurs__titre,
+    .produits__titre {
+        font-size: 1.75rem;
+    }
+    
+    .header__logo-img {
+        height: 70px;
+    }
+    
+    .principal {
+        min-height: auto;
+        padding: 2rem 0;
+    }
+    
+    .principal__btn,
+    .produits__btn,
+    .produits__voir-tout {
+        padding: 0.5rem 1.5rem;
+        font-size: 0.9rem;
+    }
+    
+    .valeurs__carte,
+    .apropos-processus__carte,
+    .apropos-temoignages__carte {
+        padding: 1.5rem !important;
+    }
+    
+    .valeurs__icone {
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+    }
+    
+    .produits__image-conteneur {
+        height: 250px;
+    }
+    
+    .produits__prix {
+        font-size: 1.5rem;
+    }
+    
+    .footer__lien-social {
+        width: 35px;
+        height: 35px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Très petit mobile (max 500px) */
+@media (max-width: 500px) {
+    body {
+        font-size: 0.9rem;
+    }
+    
+    .principal__titre {
+        font-size: 1.5rem;
+    }
+    
+    .valeurs__titre,
+    .produits__titre {
+        font-size: 1.5rem;
+    }
+    
+    .header__logo-img {
+        height: 60px;
+    }
+    
+    .principal__btn,
+    .produits__btn,
+    .produits__voir-tout,
+    .formulaire-contact__soumettre {
+        display: block;
+        width: 100%;
+        padding: 0.75rem;
+    }
+    
+    .valeurs__icone {
+        width: 45px;
+        height: 45px;
+        font-size: 1.25rem;
+    }
+    
+    .produits__image-conteneur {
+        height: 200px;
+    }
+    
+    .apropos-processus__icone,
+    .info-contact__icone {
+        font-size: 2rem;
+    }
+    
+    .apropos-temoignages__avatar {
+        width: 60px;
+        height: 60px;
+    }
+    
+ 
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+   
+    .navbar-collapse {
+        background-color: var(--color-mint);
+        padding: 1rem;
+        margin-top: 1rem;
+        border-radius: 0.5rem;
+    }
+}
